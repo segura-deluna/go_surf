@@ -146,6 +146,34 @@
     }
 }
 
+.menu-btn {
+    display: none;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    z-index: 20;
+    right: 20px;
+    top: 75px;
+    background-color: rgba(255,255,255, .1);
+    cursor: pointer;
+
+    &__inner {
+        width: 40px;
+    }
+
+    &__line {
+        height: 5px;
+        background-color: $green;
+        + .menu-btn__line {
+            margin-top: 5px;
+        }
+    }
+}
+
 .header__search {
     padding: 15px 0 35px;
 }
